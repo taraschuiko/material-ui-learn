@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Container, Button } from "@material-ui/core";
+import { Container, Button, Grid, Paper } from "@material-ui/core";
 
 function App() {
   return (
@@ -9,6 +9,17 @@ function App() {
       <Button variant="contained" color="primary">
         Hello World
       </Button>
+      <Grid container spacing={3}>
+        <Grid item xs="6">
+          <Paper>Hi</Paper>
+        </Grid>
+        <Grid item xs>
+          <Paper>Hello</Paper>
+        </Grid>
+        <Grid item xs>
+          <Paper>What's good</Paper>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
